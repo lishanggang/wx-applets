@@ -4,10 +4,24 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    helloWorld: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    options: [
+      {
+        value: 1,
+        label: '商品A'
+      },
+      {
+        value: 2,
+        label: '商品B'
+      },
+      {
+        value: 3,
+        label: '商品C'
+      }
+    ]
   },
   //事件处理函数
   bindViewTap: function() {

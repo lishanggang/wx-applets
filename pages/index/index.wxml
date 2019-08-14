@@ -8,8 +8,19 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <text data-motto="{{helloWorld}}" class="user-motto">{{helloWorld}}</text>
   </view>
+  <!-- hidden -->
+  <view hidden="{{ hasUserInfo ? true : false }}">
+      <text>显示个人信息</text>
+  </view>
+  <!-- 循环 -->
+  <view>
+    <block wx:for="{{ options }}" wx:for-item="item" wx:key="index">
+        <view>{{ item.label }}</view>
+    </block>
+  </view>
+  <!-- end -->
   <view class="wrapper">
   <view>这里是组件的内部节点</view>
     <slot></slot>
