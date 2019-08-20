@@ -17,7 +17,7 @@
   </view>
   <!-- hidden -->
   <view hidden="{{ hasUserInfo ? true : false }}">
-      <text>显示个人信息</text>
+      <text>显示个人信息11</text>
   </view>
   <!-- 循环 -->
   <view>
