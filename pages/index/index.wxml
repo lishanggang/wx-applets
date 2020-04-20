@@ -8,7 +8,7 @@
       src="{{userInfo.avatarUrl}}"
       mode="cover"
       >
-      </image>
+      </image>   
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
